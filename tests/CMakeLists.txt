@@ -17,6 +17,7 @@ function(wallet_add_test TEST_NAME TEST_SOURCE)
     gtest_discover_tests(${TEST_NAME})
 endfunction()
 
+wallet_add_test(test_crypto          test_crypto.cpp)
 wallet_add_test(test_mnemonic        test_mnemonic.cpp)
 wallet_add_test(test_key_derivation  test_key_derivation.cpp)
 wallet_add_test(test_ethereum        test_ethereum.cpp)
