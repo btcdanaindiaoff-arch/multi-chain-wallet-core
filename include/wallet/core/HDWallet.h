@@ -47,6 +47,7 @@ private:
 
     std::vector<uint8_t> seed_;       ///< 64-byte BIP-39 seed.
     std::vector<uint8_t> masterKey_;  ///< 32-byte master private key.
+    std::vector<uint8_t> chainCode_;  ///< 32-byte master chain code (BIP-32).
 };
 
 } // namespace wallet
