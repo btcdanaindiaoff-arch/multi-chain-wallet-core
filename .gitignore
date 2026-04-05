@@ -1,41 +1,133 @@
-# Prerequisites
-*.d
+# ============================================================================
+# multi-chain-wallet-core C++ .gitignore
+# ============================================================================
 
-# Compiled Object files
-*.slo
-*.lo
+# --- Build directories ---
+build/
+cmake-build-*/
+out/
+build-android/
+build-ios/
+build-wasm/
+
+# --- CMake generated files ---
+CMakeCache.txt
+CMakeFiles/
+cmake_install.cmake
+Makefile
+CTestTestfile.cmake
+install_manifest.txt
+compile_commands.json
+CPackConfig.cmake
+CPackSourceConfig.cmake
+_deps/
+
+# --- Compiled object files ---
 *.o
 *.obj
+*.lo
+*.slo
 
-# Precompiled Headers
-*.gch
-*.pch
+# --- Compiled static libraries ---
+*.a
+*.lib
+*.lai
+*.la
 
-# Linker files
-*.ilk
-
-# Debugger Files
-*.pdb
-
-# Compiled Dynamic libraries
+# --- Compiled shared libraries ---
 *.so
+*.so.*
 *.dylib
 *.dll
 
-# Fortran module files
-*.mod
-*.smod
-
-# Compiled Static libraries
-*.lai
-*.la
-*.a
-*.lib
-
-# Executables
+# --- Executables ---
 *.exe
 *.out
 *.app
+*.bin
 
-# debug information files
-*.dwo
+# --- Precompiled headers ---
+*.gch
+*.pch
+
+# --- Debug files ---
+*.dSYM/
+*.su
+*.idb
+*.pdb
+core
+core.*
+
+# --- IDE / Editor directories ---
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+*.kate-swp
+.project
+.cproject
+.settings/
+*.code-workspace
+
+# --- Xcode ---
+xcuserdata/
+*.xccheckout
+*.xcscmblueprint
+DerivedData/
+
+# --- Visual Studio ---
+*.vcxproj.user
+*.suo
+*.sdf
+*.opensdf
+*.VC.db
+*.VC.opendb
+ipch/
+x64/
+x86/
+
+# --- OS generated files ---
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+desktop.ini
+
+# --- Testing ---
+Testing/
+*.gcda
+*.gcno
+*.gcov
+coverage/
+lcov.info
+
+# --- Package managers ---
+vcpkg_installed/
+conan/
+conanbuildinfo.*
+conaninfo.txt
+graph_info.json
+
+# --- Third party (managed separately) ---
+# third_party/ contents are either submodules or fetched by CMake
+
+# --- Protobuf generated ---
+*.pb.h
+*.pb.cc
+*_pb2.py
+
+# --- Documentation generated ---
+docs/html/
+docs/latex/
+Doxygen/
+
+# --- Temporary files ---
+*.tmp
+*.temp
+*.log
+*.bak
+*.orig
